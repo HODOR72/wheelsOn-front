@@ -9,6 +9,10 @@ interface MenuCell {
   href: string;
   label: string;
   soon?: boolean;
+  display?: string;
+  marginBottom?: string;
+  marginLeft?: string;
+  marginRight?: string;
   alignItems?: string;
   width?: number | string;
   height?: number | string;
@@ -22,7 +26,7 @@ interface MenuCell {
   labelFontSize?: number;
 }
 
-export const MenuCell: FunctionComponent<MenuCell> = ({
+export const MenuCell: FunctionComponent<any> = ({
   href,
   src,
   alt,
