@@ -7,13 +7,15 @@ import { TextComponent } from "../components/text-component"
 
 interface TopHeader {
 	type?:
-		| "classic"
-		| "classic-osago2"
-		| "classic-no-logo"
-		| "burger"
-		| "mainpage"
-		| "homelink"
-		| "loader"
+	| "classic"
+	| "classic-osago2"
+	| "classic-no-logo"
+	| "burger"
+	| "mainpage"
+	| "noburger"
+	| "numbers"
+	| "homelink"
+	| "loader"
 	backButtonNeed?: boolean
 	backButtonClickHandler?(): any
 	clickCloseButtonHandler?(): any
@@ -22,8 +24,8 @@ interface TopHeader {
 export const TopHeader: FunctionComponent<TopHeader> = ({
 	type = "classic",
 	backButtonNeed = false,
-	backButtonClickHandler = () => {},
-	clickCloseButtonHandler = () => {},
+	backButtonClickHandler = () => { },
+	clickCloseButtonHandler = () => { },
 }) => {
 	const router = useRouter()
 
@@ -48,12 +50,7 @@ export const TopHeader: FunctionComponent<TopHeader> = ({
 			{type === "loader" ? (
 				<div className={"row justify-content-between align-items-start mb-0"}>
 					<div className="col-12 d-flex justify-content-center">
-						<Image
-							src={require("assets/img/logo.svg")}
-							alt={"logo"}
-							width={160}
-							height={40}
-						></Image>
+						<Image alt="logo" src={require("assets/img/LogoMain.png")} width={48} height={48} />
 					</div>
 				</div>
 			) : (
@@ -63,11 +60,11 @@ export const TopHeader: FunctionComponent<TopHeader> = ({
 							<IconButton sx={{ paddingLeft: 0 }} onClick={goBack}>
 								<ArrowBackIosRoundedIcon
 									sx={{
-										color: "#9F6BC9",
+										color: "#7DF17B",
 										fontSize: 23,
 									}}
 								></ArrowBackIosRoundedIcon>
-								<TextComponent fontSize={17} color="#9F6BC9">
+								<TextComponent fontSize={17} color="#7DF17B">
 									Назад
 								</TextComponent>
 							</IconButton>
@@ -82,11 +79,60 @@ export const TopHeader: FunctionComponent<TopHeader> = ({
 							>
 								<ArrowBackIosRoundedIcon
 									sx={{
-										color: "#9F6BC9",
+										color: "#7DF17B",
 										fontSize: 23,
 									}}
 								></ArrowBackIosRoundedIcon>
-								<TextComponent fontSize={17} color="#9F6BC9">
+								<TextComponent fontSize={17} color="#7DF17B">
+									Назад
+								</TextComponent>
+							</IconButton>
+						) : (
+							""
+						)}
+
+						{type === "numbers" ? (
+							<div className="d-flex space-between mt-3">
+								<div>
+									<IconButton sx={{ paddingLeft: 0 }} onClick={goBack}>
+										<ArrowBackIosRoundedIcon
+											sx={{
+												color: "#7DF17B",
+												fontSize: 23,
+											}}
+										></ArrowBackIosRoundedIcon>
+										<TextComponent fontSize={17} color="#7DF17B">
+											Назад
+										</TextComponent>
+									</IconButton>
+								</div>
+								<div>
+									<IconButton
+										sx={{ width: 56, height: 56, padding: 0 }}
+										onClick={goHome}
+									>
+										<Image
+											src={require("assets/img/RoundLogo.svg")}
+											width={56}
+											height={56}
+											alt="logo"
+										></Image>
+									</IconButton>
+								</div>
+							</div>
+						) : (
+							""
+						)}
+
+						{type === "noburger" ? (
+							<IconButton sx={{ paddingLeft: 0 }} onClick={goBack}>
+								<ArrowBackIosRoundedIcon
+									sx={{
+										color: "#7DF17B",
+										fontSize: 23,
+									}}
+								></ArrowBackIosRoundedIcon>
+								<TextComponent fontSize={17} color="#7DF17B">
 									Назад
 								</TextComponent>
 							</IconButton>
@@ -98,29 +144,18 @@ export const TopHeader: FunctionComponent<TopHeader> = ({
 							<IconButton sx={{ paddingLeft: 0, width: 200 }} onClick={goHome}>
 								<ArrowBackIosRoundedIcon
 									sx={{
-										color: "#9F6BC9",
+										color: "#7DF17B",
 										fontSize: 23,
 									}}
 								></ArrowBackIosRoundedIcon>
 								<TextComponent
 									fontSize={17}
-									color="#9F6BC9"
+									color="#7DF17B"
 									textTransform="initial"
 								>
 									На главный экран
 								</TextComponent>
 							</IconButton>
-						) : (
-							""
-						)}
-
-						{type === "burger" || type === "mainpage" ? (
-							<Image
-								src={require("assets/img/logo.svg")}
-								alt={"logo"}
-								width={160}
-								height={40}
-							></Image>
 						) : (
 							""
 						)}
@@ -132,14 +167,14 @@ export const TopHeader: FunctionComponent<TopHeader> = ({
 								sx={{
 									width: 50,
 									height: 50,
-									color: "#9F6BC9",
+									color: "#7DF17B",
 									float: "right",
 									padding: 0,
 								}}
 								onClick={goToBurger}
 							>
 								<Image
-									src={require("assets/img/burger-lines.svg")}
+									src={require("assets/img/Burger.svg")}
 									alt="lines"
 									width={50}
 									height={50}
@@ -156,7 +191,7 @@ export const TopHeader: FunctionComponent<TopHeader> = ({
 									onClick={goHome}
 								>
 									<Image
-										src={require("assets/img/logo-square.svg")}
+										src={require("assets/img/Burger.svg")}
 										width={40}
 										height={40}
 										alt="logo"
@@ -168,25 +203,30 @@ export const TopHeader: FunctionComponent<TopHeader> = ({
 						)}
 
 						{type === "burger" ? (
-							<IconButton
-								sx={{
-									width: 50,
-									height: 50,
-									color: "#9F6BC9",
-									float: "right",
-									padding: 0,
-								}}
-								onClick={() => (backButtonNeed ? clickCloseIcon() : goBack())}
-							>
-								<Image
-									src={require("assets/img/burger-close.svg")}
-									alt="close"
-									width={50}
-									height={50}
-								></Image>
-							</IconButton>
+							<div className="burger-header">
+								<div className="header-row">
+									<Image alt="logo" src={require("assets/img/MainLogo.svg")} width={88} height={88} />
+								</div>
+								<IconButton
+									sx={{
+										width: 50,
+										height: 50,
+										color: "#7DF17B",
+										float: "right",
+										padding: 0,
+									}}
+									onClick={() => (backButtonNeed ? clickCloseIcon() : goBack())}
+								>
+									<Image
+										src={require("assets/img/burger-close.svg")}
+										alt="close"
+										width={50}
+										height={50}
+									></Image>
+								</IconButton>
+							</div>
 						) : (
-							""
+							null
 						)}
 					</div>
 				</div>

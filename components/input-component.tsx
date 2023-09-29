@@ -14,18 +14,20 @@ interface InputComponent {
 	height?: number
 	style?: string
 	label?: string
+	name?: string
 	required?: boolean
 }
 
 export const InputComponent: FunctionComponent<InputComponent> = ({
 	placeholder,
 	value,
+	name,
 	setValue,
-	removeValue = () => {},
+	removeValue = () => { },
 	needRemode = false,
 	type = "text",
-	onFocus = () => {},
-	onBlur = () => {},
+	onFocus = () => { },
+	onBlur = () => { },
 	height = 42,
 	label = "123",
 	required = true,
@@ -46,20 +48,19 @@ export const InputComponent: FunctionComponent<InputComponent> = ({
 	return (
 		<>
 			{placeholder && (
-				<p style={{ marginBottom: 4, marginTop: 8 }}>
-					{placeholder} {required && <span style={{ color: "red" }}>*</span>}
+				<p style={{ marginBottom: 4, marginTop: 8, color: "#fff" }}>
+					{name}
 				</p>
 			)}
 			<div
 				style={{
 					position: "relative",
 					padding: 2,
+					marginTop: "10px",
 					height: height,
-					borderRadius: "4px",
-					boxShadow: "-1px 2px 4px rgba(0, 0, 0, 0.17)",
-					border: "0.5px solid #F1F1F1",
-					background:
-						"linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(159,159,159,1) 100%)",
+					color: "#FFFFFF",
+					borderRadius: "6px",
+					background: "#33363F",
 					width: "100%",
 				}}
 			>
@@ -70,11 +71,12 @@ export const InputComponent: FunctionComponent<InputComponent> = ({
 					disableUnderline
 					type={type}
 					sx={{
-						borderRadius: "4px",
+						padding: "20px",
 						paddingLeft: "0.5em",
 						height: height - 5,
-						boxShadow: "inset -1px 2px 4px rgba(0, 0, 0, 0.17)",
-						background: "#F1F1F1",
+						color: "#FFFFFF",
+						borderRadius: "6px",
+						background: "#33363F",
 					}}
 					placeholder={placeholder}
 					value={value}

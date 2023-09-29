@@ -3,25 +3,25 @@ import React, { FunctionComponent } from "react";
 import { TextComponent } from "./text-component";
 import KeyboardArrowUpIcon from "@mui/icons-material/KeyboardArrowUp";
 interface AccordionComponent {
-  top: string;
-  bottom: string;
+	top: string;
+	bottom: string;
 }
 
 export const AccordionComponent: FunctionComponent<AccordionComponent> = ({
-  top,
-  bottom,
+	top,
+	bottom,
 }) => {
-  return (
-		<Accordion>
+	return (
+		<Accordion sx={{ background: "#33363F", borderRadius: "10px", }}>
 			<AccordionSummary
 				expandIcon={
-					<KeyboardArrowUpIcon sx={{ color: "#9f6bc9" }}></KeyboardArrowUpIcon>
+					<KeyboardArrowUpIcon sx={{ color: "#7DF17B" }}></KeyboardArrowUpIcon>
 				}
 			>
-				<TextComponent textTransform="initial">{top}</TextComponent>
+				<TextComponent color="#fff" textTransform="initial">{top}</TextComponent>
 			</AccordionSummary>
 			<AccordionDetails>
-				<TextComponent textTransform="initial">{bottom}</TextComponent>
+				<TextComponent color="#fff" textTransform="initial">{bottom}</TextComponent>
 			</AccordionDetails>
 		</Accordion>
 	)

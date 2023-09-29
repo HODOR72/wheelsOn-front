@@ -23,7 +23,7 @@ export const ListMenuItem: FunctionComponent<MenuItem> = ({
 	iconWidth = 30,
 	iconHeight = 30,
 	fontWeight = 400,
-	onClick = () => {},
+	onClick = () => { },
 }) => {
 	const router = useRouter();
 	const onClickHandler = () => {
@@ -52,7 +52,7 @@ export const ListMenuItem: FunctionComponent<MenuItem> = ({
 				<ListItemText
 					sx={{ maxWidth: 250 }}
 					primaryTypographyProps={{
-						sx: { fontSize: '14px', fontWeight: fontWeight },
+						sx: { fontSize: '14px', fontWeight: fontWeight, },
 					}}
 					primary={text}
 				/>

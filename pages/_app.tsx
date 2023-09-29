@@ -13,11 +13,11 @@ import { useEffect } from "react"
 const theme = createTheme({
 	palette: {
 		primary: {
-			main: "#9F6BC9",
+			main: "#7DF17B",
 			contrastText: "#fff",
 		},
 		secondary: {
-			main: "#F6F5F6",
+			main: "#7DF17B",
 			contrastText: "#696969",
 		},
 		info: {

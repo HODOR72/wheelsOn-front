@@ -9,12 +9,16 @@ interface MenuCell {
   href: string;
   label: string;
   soon?: boolean;
+  alignItems?: string;
   width?: number | string;
-  height?: number;
+  height?: number | string;
   flexDirection?: string;
   imgSize?: number;
+  background?: string;
   justifyContent?: string;
   textMargin?: string;
+  underText?: string;
+  textFontSize?: number;
   labelFontSize?: number;
 }
 
@@ -23,6 +27,10 @@ export const MenuCell: FunctionComponent<MenuCell> = ({
   src,
   alt,
   label,
+  background,
+  underText,
+  alignItems,
+  textFontSize = 12,
   soon = false,
   width = 130,
   height = 130,
@@ -44,15 +52,16 @@ export const MenuCell: FunctionComponent<MenuCell> = ({
         display: "flex",
         flexDirection: flexDirection,
         justifyContent: justifyContent,
-        alignItems: "center",
+        background: background,
+        alignItems: alignItems,
         borderRadius: "10px",
         boxShadow: "0px 5px 24px rgba(65, 65, 65, 0.1)",
         position: "relative",
         width: width,
         height: height,
-        marginBottom: "0.4em",
-        marginLeft: "0.2em",
-        marginRight: "0.2em",
+        marginBottom: "8px",
+        marginLeft: "4px",
+        marginRight: "4px",
       }}
       onClick={goToLink}
     >
@@ -63,21 +72,34 @@ export const MenuCell: FunctionComponent<MenuCell> = ({
             width={imgSize}
             height={imgSize}
             alt={"soon"}
-          ></Image>
+          >
+          </Image>
         </div>
       ) : (
         ""
       )}
 
-      <Image src={src} alt={alt} width={imgSize} height={imgSize}></Image>
+      <div className="cell-image">
+        <Image src={src} alt={alt} width={imgSize} height={imgSize}></Image>
+      </div>
       <TextComponent
         margin={textMargin}
         fontSize={labelFontSize}
-        color="#696969"
-        textAlign="center"
+        color="#fff"
+        textAlign={alignItems}
       >
         {label}
       </TextComponent>
+      {underText ? (
+        <TextComponent
+          margin={textMargin}
+          fontSize={textFontSize}
+          color="#fff"
+          textAlign={alignItems}
+        >
+          {underText}
+        </TextComponent>
+      ) : null}
     </Button>
   );
 };

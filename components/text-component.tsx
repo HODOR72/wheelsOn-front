@@ -29,16 +29,16 @@ export const TextComponent: FunctionComponent<TextComponent> = ({
 	const fontFamily = () => {
 		switch (fontWeight) {
 			case 400: {
-				return 'Noto Sans Regular';
+				return 'Euclid Circular Regular';
 			}
 			case 500: {
-				return 'Noto Sans Medium';
+				return 'Euclid Circular Medium';
 			}
 			case 700: {
-				return 'Noto Sans Bold';
+				return 'Euclid Circular Bold';
 			}
 			default: {
-				return 'Noto Sans Regular';
+				return 'Euclid Circular Regular';
 			}
 		}
 	};

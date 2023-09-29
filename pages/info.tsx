@@ -2,136 +2,51 @@ import { NextPage } from "next"
 import { TextComponent } from "../components/text-component"
 import { BaseLayout } from "../widgets/base-layout"
 import { TopHeader } from "../widgets/top-header"
-import { Swiper, SwiperSlide } from "swiper/react"
+import { ButtonComponent } from "../components/button-component"
 import "swiper/css"
 import "swiper/css/navigation"
-import { Navigation } from "swiper"
 
 const InfoPage: NextPage = () => {
 	return (
 		<BaseLayout>
-			<TopHeader></TopHeader>
-			<TextComponent fontSize={22} fontWeight={700} textAlign="center">
-				VITAMIN.TOOLS FOOTBAL DAY ПО ЧАСАМ
+			<TopHeader type="numbers"></TopHeader>
+			<TextComponent color="#fff" fontSize={22} fontWeight={700} textAlign="center">
+				Стать акционером
 			</TextComponent>
-			<div className="mt-5"></div>
-			<Swiper
-				modules={[Navigation]}
-				spaceBetween={50}
-				slidesPerView={1}
-				navigation
-				onSlideChange={() => console.log("slide change")}
-				onSwiper={swiper => console.log(swiper)}
-			>
-				<SwiperSlide>
-					<div
-						style={{
-							display: "flex",
-							alignItems: "center",
-							justifyContent: "center",
-							flexDirection: "column",
-							gap: "10px",
-							textAlign: "center",
-						}}
-					>
-						<p style={{ color: "#9F6BC9", fontSize: "35px", marginBottom: 15 }}>
-							09:00 — 10:00
-						</p>
-						<p style={{ fontSize: 14 }}>
-							Сбор команд и болельщиков на стадионе CityFootball «Сокольники»
-						</p>
-					</div>
-				</SwiperSlide>
-				<SwiperSlide>
-					<div
-						style={{
-							display: "flex",
-							alignItems: "center",
-							justifyContent: "center",
-							flexDirection: "column",
-							gap: "10px",
-						}}
-					>
-						<p style={{ color: "#9F6BC9", fontSize: "35px", marginBottom: 15 }}>
-							10:00 — 10:30
-						</p>
-						<p style={{ fontSize: 14 }}>
-							Официальное открытие и объявление спонсоров ведущим
-						</p>
-					</div>
-				</SwiperSlide>
-				<SwiperSlide>
-					<div
-						style={{
-							display: "flex",
-							alignItems: "center",
-							justifyContent: "center",
-							flexDirection: "column",
-							gap: "10px",
-							textAlign: "center",
-						}}
-					>
-						<p style={{ color: "#9F6BC9", fontSize: "35px", marginBottom: 15 }}>
-							10:30 — 12:00
-						</p>
-						<p style={{ fontSize: 14 }}>Старт группового этапа</p>
-					</div>
-				</SwiperSlide>
-				<SwiperSlide>
-					<div
-						style={{
-							display: "flex",
-							alignItems: "center",
-							justifyContent: "center",
-							flexDirection: "column",
-							gap: "10px",
-							textAlign: "center",
-						}}
-					>
-						<p style={{ color: "#9F6BC9", fontSize: "35px", marginBottom: 15 }}>
-							12:00 — 15:00
-						</p>
-						<p style={{ fontSize: 14 }}>Полуфинал плей-офф</p>
-					</div>
-				</SwiperSlide>
-				<SwiperSlide>
-					<div
-						style={{
-							display: "flex",
-							alignItems: "center",
-							justifyContent: "center",
-							flexDirection: "column",
-							gap: "10px",
-							textAlign: "center",
-						}}
-					>
-						<p style={{ color: "#9F6BC9", fontSize: "35px", marginBottom: 15 }}>
-							15:00 — 16:00
-						</p>
-						<p style={{ fontSize: 14 }}>Финал плей-офф</p>
-					</div>
-				</SwiperSlide>
-				<SwiperSlide>
-					<div
-						style={{
-							display: "flex",
-							alignItems: "center",
-							justifyContent: "center",
-							flexDirection: "column",
-							gap: "10px",
-							textAlign: "center",
-						}}
-					>
-						<p style={{ color: "#9F6BC9", fontSize: "35px", marginBottom: 15 }}>
-							17:00 — 00:00
-						</p>
-						<p style={{ fontSize: 14 }}>
-							Закрытое afterpatry с брендированной фотозоной, фуршетом и
-							интерактивами
-						</p>
-					</div>
-				</SwiperSlide>
-			</Swiper>
+			<div className="mt-5 list">
+				<ul>
+					<li>
+						<b>Структура входа</b>: привилегированные акции компании ОАЭ с фиксированной доходностью
+					</li>
+					<li>
+						<b>Минимальная сумма инвестиций</b>:  USD 100k (ВНЖ ОАЭ в подарок при инвестиции от USD 200k)
+					</li>
+					<li>
+						<b>Доходность</b>: от 12% (фикс) до 25% в год
+					</li>
+					<li>
+						<b>Частота выплат %</b>: 2 раза в год
+					</li>
+					<li>
+						<b>Срок инвестиции</b>: от 3-х лет
+					</li>
+					<li>
+						<b>Использование средств</b>: 100% целевые средства на закупку авто
+					</li>
+					<li>
+						<b>Марки приобретаемых авто</b>: премиум / SUV автомобили (Land Rover, Mercedes, BMW, Porsche, Audi и др.)
+					</li>
+					<li>
+						<b>Возможные формы платежа</b>: банковский перевод, криптовалюта, cash
+					</li>
+					<li>
+						<b>Отчетность</b>: акционер будет ежеквартально получать отчетность о результатах деятельности компании
+					</li>
+				</ul>
+			</div>
+			<div style={{ margin: "auto", marginTop: "20px", marginBottom: "20px" }} className="mobile-cells-wrapper pt-5">
+				<ButtonComponent href="sell">Оставить заявку</ButtonComponent>
+			</div>
 		</BaseLayout>
 	)
 }

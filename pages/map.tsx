@@ -53,7 +53,7 @@ const MapPage: NextPage = () => {
 						></Image>
 					</div>
 					<TextComponent fontSize={18} fontWeight={500}>
-						На машине 4 минуты от метро Сокольники 
+						На машине 4 минуты от метро Сокольники
 					</TextComponent>
 				</div>
 				<div style={{ display: "flex", alignItems: "center", marginTop: 20 }}>
@@ -74,8 +74,4 @@ const MapPage: NextPage = () => {
 		</BaseLayout>
 	)
 }
-
-/* В 12 минутах ходьбы
-						от метро Сокольники На машине 4 минуты от метро Сокольники */
-
 export default MapPage

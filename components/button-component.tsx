@@ -13,7 +13,7 @@ interface ButtonComponent {
 }
 
 export const ButtonComponent: FunctionComponent<ButtonComponent> = ({
-	className = "button-component-red",
+	className = "button-component-red buttonMake",
 	children,
 	height = 44,
 	href = "",
