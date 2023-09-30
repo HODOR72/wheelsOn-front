@@ -266,7 +266,7 @@ export const TopHeader: FunctionComponent<TopHeader> = ({
 									onClick={() => (backButtonNeed ? clickCloseIcon() : goBack())}
 								>
 									<Image
-										src={require("assets/img/burger.svg")}
+										src={require("assets/img/Burger.svg")}
 										alt="close"
 										width={50}
 										height={50}
