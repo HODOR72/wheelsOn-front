@@ -8,7 +8,7 @@ const About: NextPage = () => {
 	return (
 		<BaseLayout>
 			<TopHeader type="numbers"></TopHeader>
-			<TextComponent fontSize={22} fontWeight={500} color="#fff">
+			<TextComponent fontSize={22} fontWeight={500} color="#fff" textAlign="center">
 				ОАЭ в цифрах - Экспаты
 			</TextComponent>
 			<div className="mt-3"></div>

@@ -27,7 +27,7 @@ const Sell: NextPage = () => {
 			</BaseLayout>
 			<div className="curve">
 				<Image alt="curve" src={require("/assets/img/Bezier.svg")} width={1500} height={300} />
-				<div style={{ margin: "auto", marginTop: "20px" }} className="mobile-cells-wrapper pt-5">
+				<div style={{ margin: "auto", marginTop: "20px", marginBottom: "20px" }} className="mobile-cells-wrapper">
 					<ButtonComponent>Оставить заявку</ButtonComponent>
 				</div>
 			</div>

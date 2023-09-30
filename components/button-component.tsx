@@ -34,7 +34,7 @@ export const ButtonComponent: FunctionComponent<ButtonComponent> = ({
 				borderRadius: borderRadius,
 			}}
 			classes={{ disabled: "button-component-disabled" }}
-			className={className}
+			className={`${className} buttonMake`}
 			disabled={disabled}
 			onClick={href === "" ? onClick : goToLink}
 		>

@@ -44,7 +44,7 @@ const InfoPage: NextPage = () => {
 					</li>
 				</ul>
 			</div>
-			<div style={{ margin: "auto", marginTop: "20px", marginBottom: "20px" }} className="mobile-cells-wrapper pt-5">
+			<div style={{ margin: "auto" }} className="mobile-cells-wrapper pt-5 pb-5">
 				<ButtonComponent href="sell">Оставить заявку</ButtonComponent>
 			</div>
 		</BaseLayout>

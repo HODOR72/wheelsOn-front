@@ -12,8 +12,9 @@ export const AccordionComponent: FunctionComponent<AccordionComponent> = ({
 	bottom,
 }) => {
 	return (
-		<Accordion sx={{ background: "#33363F", borderRadius: "10px", }}>
+		<Accordion sx={{ background: "#33363F", borderRadius: "10px" }}>
 			<AccordionSummary
+				sx={{ height: "max-content" }}
 				expandIcon={
 					<KeyboardArrowUpIcon sx={{ color: "#7DF17B" }}></KeyboardArrowUpIcon>
 				}
