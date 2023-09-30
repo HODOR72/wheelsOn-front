@@ -19,10 +19,10 @@ export const AccordionComponent: FunctionComponent<AccordionComponent> = ({
 					<KeyboardArrowUpIcon sx={{ color: "#7DF17B" }}></KeyboardArrowUpIcon>
 				}
 			>
-				<TextComponent color="#fff" textTransform="initial">{top}</TextComponent>
+				<TextComponent color="#fff" textTransform="initial" fontSize={16} fontWeight={700}>{top}</TextComponent>
 			</AccordionSummary>
 			<AccordionDetails>
-				<TextComponent color="#fff" textTransform="initial">{bottom}</TextComponent>
+				<TextComponent color="#fff" textTransform="initial" fontSize={12} fontWeight={500}>{bottom}</TextComponent>
 			</AccordionDetails>
 		</Accordion>
 	)

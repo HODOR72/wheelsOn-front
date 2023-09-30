@@ -13,39 +13,39 @@ const InfoPage: NextPage = () => {
 			<TextComponent color="#fff" fontSize={24} fontWeight={700} textAlign="center">
 				Стать акционером
 			</TextComponent>
-			<div className="mt-5 list">
+			<div className="list">
 				<ul className="become-list">
-					<li>
+					<li className="become-item">
 						<b>Структура входа</b>: привилегированные акции компании ОАЭ с фиксированной доходностью
 					</li>
-					<li>
+					<li className="become-item">
 						<b>Минимальная сумма инвестиций</b>:  USD 100k (ВНЖ ОАЭ в подарок при инвестиции от USD 200k)
 					</li>
-					<li>
+					<li className="become-item">
 						<b>Доходность</b>: от 12% (фикс) до 25% в год
 					</li>
-					<li>
+					<li className="become-item">
 						<b>Частота выплат %</b>: 2 раза в год
 					</li>
-					<li>
+					<li className="become-item">
 						<b>Срок инвестиции</b>: от 3-х лет
 					</li>
-					<li>
+					<li className="become-item">
 						<b>Использование средств</b>: 100% целевые средства на закупку авто
 					</li>
-					<li>
+					<li className="become-item">
 						<b>Марки приобретаемых авто</b>: премиум / SUV автомобили (Land Rover, Mercedes, BMW, Porsche, Audi и др.)
 					</li>
-					<li>
+					<li className="become-item">
 						<b>Возможные формы платежа</b>: банковский перевод, криптовалюта, cash
 					</li>
-					<li>
+					<li className="become-item">
 						<b>Отчетность</b>: акционер будет ежеквартально получать отчетность о результатах деятельности компании
 					</li>
 				</ul>
 			</div>
-			<div style={{ margin: "auto" }} className="mobile-cells-wrapper pt-5 pb-5">
-				<ButtonComponent href="sell">Оставить заявку</ButtonComponent>
+			<div style={{ margin: "auto", width: "100%" }} className="mobile-cells-wrapper pt-3 pb-5">
+				<ButtonComponent href="sell">Связаться с нами</ButtonComponent>
 			</div>
 		</BaseLayout>
 	)

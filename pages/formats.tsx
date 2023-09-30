@@ -14,36 +14,36 @@ const Formats: NextPage = () => {
 			<TextComponent color="#fff" fontSize={22} fontWeight={700} textAlign="center">
 				Продать авто
 			</TextComponent>
-			<div className="mt-5 list">
-				<ul>
-					<li>
+			<div className="list">
+				<ul className="become-list">
+					<li className="become-item">
 						<b>Структура входа</b>: покупка собственного автомобиля и продажа нашей компании в рассрочку
 					</li>
-					<li>
+					<li className="become-item">
 						<b>Минимальная сумма инвестиций</b>: USD 200k (для оформления автомобиля в собственность необходимо иметь ВНЖ в ОАЭ)
 					</li>
-					<li>
+					<li className="become-item">
 						<b>Доходность</b>: от 12% в год с погашением тела долга через 3-5 лет на выбор инвестора
 					</li>
-					<li>
+					<li className="become-item">
 						<b>Частота выплат %</b>: ежеквартально
 					</li>
-					<li>
+					<li className="become-item">
 						<b>Срок инвестиции</b>: от 3-х лет
 					</li>
-					<li>
+					<li className="become-item">
 						<b>Марки приобретаемых авто</b>: премиум / SUV автомобили (Land Rover, Mercedes, BMW, Porsche, Audi и др.)
 					</li>
-					<li>
+					<li className="become-item">
 						<b>Возможные формы платежа</b>: банковский перевод, криптовалюта, cash
 					</li>
-					<li>
+					<li className="become-item">
 						<b>Гарантии выплат</b>: security check на сумму долга от имени компании
 					</li>
 				</ul>
 			</div>
-			<div style={{ margin: "auto" }} className="mobile-cells-wrapper pt-5 pb-5">
-				<ButtonComponent href="sell">Оставить заявку</ButtonComponent>
+			<div style={{ margin: "auto" }} className="mobile-cells-wrapper pt-3 pb-5">
+				<ButtonComponent href="sell">Связаться с нами</ButtonComponent>
 			</div>
 		</BaseLayout>
 	)
