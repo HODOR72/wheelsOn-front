@@ -14,6 +14,7 @@ interface MenuCell {
   marginLeft?: string;
   marginRight?: string;
   alignItems?: string;
+  labelWeight?: number;
   width?: number | string;
   height?: number | string;
   flexDirection?: string;
@@ -34,6 +35,7 @@ export const MenuCell: FunctionComponent<any> = ({
   background,
   underText,
   alignItems,
+  labelWeight,
   textFontSize = 12,
   soon = false,
   width = 130,
@@ -90,6 +92,7 @@ export const MenuCell: FunctionComponent<any> = ({
         margin={textMargin}
         fontSize={labelFontSize}
         color="#fff"
+        fontWeight={labelWeight}
         textAlign={alignItems}
       >
         {label}
@@ -99,6 +102,7 @@ export const MenuCell: FunctionComponent<any> = ({
           margin={textMargin}
           fontSize={textFontSize}
           color="#fff"
+          fontWeight={500}
           textAlign={alignItems}
         >
           {underText}

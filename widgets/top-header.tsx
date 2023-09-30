@@ -13,6 +13,7 @@ interface TopHeader {
 	| "burger"
 	| "mainpage"
 	| "noburger"
+	| "advanced"
 	| "numbers"
 	| "homelink"
 	| "loader"
@@ -50,7 +51,7 @@ export const TopHeader: FunctionComponent<TopHeader> = ({
 			{type === "loader" ? (
 				<div className={"row justify-content-between align-items-start mb-0"}>
 					<div className="col-12 d-flex justify-content-center">
-						<Image alt="logo" src={require("assets/img/LogoMain.png")} width={48} height={48} />
+						<Image alt="logo" src={require("assets/img/LogoMain.png")} width={88} height={88} />
 					</div>
 				</div>
 			) : (
@@ -163,23 +164,28 @@ export const TopHeader: FunctionComponent<TopHeader> = ({
 
 					<div className="col-6">
 						{type === "mainpage" ? (
-							<IconButton
-								sx={{
-									width: 50,
-									height: 50,
-									color: "#7DF17B",
-									float: "right",
-									padding: 0,
-								}}
-								onClick={goToBurger}
-							>
-								<Image
-									src={require("assets/img/Burger.svg")}
-									alt="lines"
-									width={50}
-									height={50}
-								></Image>
-							</IconButton>
+							<div className="main-row">
+								<div style={{ display: "flex", justifyContent: "center", width: "100%", marginLeft: "50px" }}>
+									<Image alt="logomain" src={require("assets/img/LogoMain.svg")} width={88} height={88} />
+								</div>
+								<IconButton
+									sx={{
+										width: 50,
+										height: 50,
+										color: "#7DF17B",
+										float: "right",
+										padding: 0,
+									}}
+									onClick={goToBurger}
+								>
+									<Image
+										src={require("assets/img/Burger.svg")}
+										alt="lines"
+										width={50}
+										height={50}
+									></Image>
+								</IconButton>
+							</div>
 						) : (
 							""
 						)}
@@ -219,6 +225,48 @@ export const TopHeader: FunctionComponent<TopHeader> = ({
 								>
 									<Image
 										src={require("assets/img/burger-close.svg")}
+										alt="close"
+										width={50}
+										height={50}
+									></Image>
+								</IconButton>
+							</div>
+						) : (
+							null
+						)}
+
+						{type === "advanced" ? (
+							<div className="advanced-header">
+								<IconButton sx={{ paddingLeft: 0, width: 80 }} onClick={goHome}>
+									<ArrowBackIosRoundedIcon
+										sx={{
+											color: "#7DF17B",
+											fontSize: 23,
+										}}
+									></ArrowBackIosRoundedIcon>
+									<TextComponent
+										fontSize={17}
+										color="#7DF17B"
+										textTransform="initial"
+									>
+										Назад
+									</TextComponent>
+								</IconButton>
+								<div className="advanced-row">
+									<Image alt="logo" src={require("assets/img/MainLogo.svg")} width={88} height={88} />
+								</div>
+								<IconButton
+									sx={{
+										width: 50,
+										height: 50,
+										color: "#7DF17B",
+										float: "right",
+										padding: 0,
+									}}
+									onClick={() => (backButtonNeed ? clickCloseIcon() : goBack())}
+								>
+									<Image
+										src={require("assets/img/burger.svg")}
 										alt="close"
 										width={50}
 										height={50}

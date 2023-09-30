@@ -52,7 +52,7 @@ export const ListMenuItem: FunctionComponent<MenuItem> = ({
 				<ListItemText
 					sx={{ maxWidth: 250 }}
 					primaryTypographyProps={{
-						sx: { fontSize: '14px', fontWeight: fontWeight, },
+						sx: { fontSize: '16px', fontWeight: fontWeight, },
 					}}
 					primary={text}
 				/>

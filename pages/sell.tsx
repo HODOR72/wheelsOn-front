@@ -4,16 +4,25 @@ import { TopHeader } from "../widgets/top-header";
 import { ButtonComponent } from "../components/button-component";
 import Image from "next/image";
 import { InputComponent } from "../components/input-component";
+import { TextComponent } from "../components/text-component";
 
 const Sell: NextPage = () => {
+
 	return (
 		<>
 			<BaseLayout>
 				<div className="burger-list">
 					<TopHeader type="burger"></TopHeader>
 
-					<InputComponent height={56} name="Имя" placeholder="Введите ваше имя" value={''} setValue={() => null} />
-					<InputComponent height={56} name="Контакты" placeholder="Номер телефона" value={''} setValue={() => null} />
+					<TextComponent color="#fff" fontWeight={500} fontSize={22} textAlign="center">Оставить заявку и получить презентацию</TextComponent>
+					<div className="contact-row">
+						<TextComponent color="#fff" fontWeight={500} fontSize={14}>Имя</TextComponent>
+						<input className="contact-input" type="text" placeholder="Введите ваше имя" />
+					</div>
+					<div className="contact-row">
+						<TextComponent color="#fff" fontWeight={500} fontSize={14}>Контакты</TextComponent>
+						<input className="contact-input" type="text" placeholder="Введите номер телефона" />
+					</div>
 				</div>
 			</BaseLayout>
 			<div className="curve">

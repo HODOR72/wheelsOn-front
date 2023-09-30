@@ -9,12 +9,12 @@ import "swiper/css/navigation"
 const InfoPage: NextPage = () => {
 	return (
 		<BaseLayout>
-			<TopHeader type="numbers"></TopHeader>
-			<TextComponent color="#fff" fontSize={22} fontWeight={700} textAlign="center">
+			<TopHeader type="advanced"></TopHeader>
+			<TextComponent color="#fff" fontSize={24} fontWeight={700} textAlign="center">
 				Стать акционером
 			</TextComponent>
 			<div className="mt-5 list">
-				<ul>
+				<ul className="become-list">
 					<li>
 						<b>Структура входа</b>: привилегированные акции компании ОАЭ с фиксированной доходностью
 					</li>

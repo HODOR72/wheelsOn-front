@@ -11,7 +11,7 @@ const InfoPage: NextPage = () => {
 				<TextComponent fontSize={22} fontWeight={700} textAlign="center" color="#fff">
 					Почему мы
 				</TextComponent>
-				<Image alt="car" src={require("assets/img/Car-about.png")} width={180} height={130} />
+				<Image alt="car" src={require("assets/img/Car-about.png")} width={180} />
 			</div>
 			<div className="mt-2"></div>
 			<div style={{ display: "flex", flexDirection: "column" }}>
@@ -38,8 +38,7 @@ const InfoPage: NextPage = () => {
 						>
 							Единственное мобильное приложение на рынке ОАЭ
 							с собственным автопарком в управлении и полностью
-							автономным доступом к любому автомобилю позволяет
-							гарантировать качество сервиса и  экономить время клиента
+							автономным доступом к любому автомобилю.
 						</p>
 					</div>
 				</div>
@@ -96,8 +95,8 @@ const InfoPage: NextPage = () => {
 							Все решения по закупке автомобилей,
 							индивидуальных ставках аренды каждому
 							клиенту принимаются при помощи системы
-							скоринга и глубокой аналитики (BI) рынка на
-							основе ежедневного сбора данных аренды / продажи авто в ОАЭ
+							скоринга и глубокой аналитики (BI)
+							сбора данных аренды / продажи авто в ОАЭ
 						</p>
 					</div>
 				</div>

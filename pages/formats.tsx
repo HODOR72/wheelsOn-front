@@ -9,7 +9,7 @@ const Formats: NextPage = () => {
 
 	return (
 		<BaseLayout>
-			<TopHeader type="numbers"></TopHeader>
+			<TopHeader type="advanced"></TopHeader>
 			<div className="mt-2"></div>
 			<TextComponent color="#fff" fontSize={22} fontWeight={700} textAlign="center">
 				Продать авто

@@ -22,22 +22,22 @@ const menuItems: menuItem[] = [
 		icon: AboutIcon.src,
 		title: "ОАЭ в цифрах",
 		href: "about",
-		iconWidth: 25,
-		iconHeight: 25,
+		iconWidth: 40,
+		iconHeight: 40,
 	},
 	{
 		icon: FAQIcon.src,
 		title: "Частые вопросы",
 		href: "faq",
-		iconWidth: 35,
-		iconHeight: 35,
+		iconWidth: 40,
+		iconHeight: 40,
 	},
 	{
 		icon: SupportIcon.src,
 		title: "Связаться с отделом продаж",
 		href: "sell",
-		iconWidth: 35,
-		iconHeight: 35,
+		iconWidth: 40,
+		iconHeight: 40,
 	},
 ]
 
@@ -58,6 +58,7 @@ const Burger: NextPage = () => {
 									text={item.title}
 									iconWidth={item.iconWidth}
 									iconHeight={item.iconHeight}
+									fontWeight={500}
 								></ListMenuItem>
 							);
 						})}
