@@ -8,10 +8,19 @@ const InfoPage: NextPage = () => {
 		<BaseLayout>
 			<TopHeader type="noburger"></TopHeader>
 			<div className="about-row">
-				<TextComponent fontSize={22} fontWeight={700} textAlign="center" color="#fff">
+				<TextComponent
+					fontSize={22}
+					fontWeight={700}
+					textAlign="center"
+					color="#fff"
+				>
 					Почему мы
 				</TextComponent>
-				<Image alt="car" src={require("assets/img/Car-about.png")} width={180} />
+				<Image
+					alt="car"
+					src={require("assets/img/Car-about.png")}
+					width={180}
+				/>
 			</div>
 			<div className="mt-2"></div>
 			<div style={{ display: "flex", flexDirection: "column" }}>
@@ -23,7 +32,7 @@ const InfoPage: NextPage = () => {
 						<h1
 							style={{
 								color: "#fff",
-								fontSize: "15px",
+								fontSize: "16px",
 								fontWeight: 500,
 								marginBottom: "10",
 							}}
@@ -32,13 +41,14 @@ const InfoPage: NextPage = () => {
 						</h1>
 						<p
 							style={{
-								fontSize: "10px",
-								color: "#fff"
+								fontSize: "11px",
+								color: "#fff",
+								marginBottom: 0,
 							}}
 						>
-							Единственное мобильное приложение на рынке ОАЭ
-							с собственным автопарком в управлении и полностью
-							автономным доступом к любому автомобилю.
+							Единственное мобильное приложение на рынке ОАЭ с собственным
+							автопарком в управлении и полностью автономным доступом к любому
+							автомобилю.
 						</p>
 					</div>
 				</div>
@@ -50,7 +60,7 @@ const InfoPage: NextPage = () => {
 						<h1
 							style={{
 								color: "#fff",
-								fontSize: "15px",
+								fontSize: "16px",
 								fontWeight: 500,
 								marginBottom: "10",
 							}}
@@ -59,13 +69,13 @@ const InfoPage: NextPage = () => {
 						</h1>
 						<p
 							style={{
-								fontSize: "10px",
-								color: "#fff"
+								fontSize: "11px",
+								color: "#fff",
+								marginBottom: 0,
 							}}
 						>
-							CEO и команда имеют опыт запуска с
-							нуля и управления автопарком 10,000+
-							автомобилей в СНГ, Европе и др. странах
+							CEO и команда имеют опыт запуска с нуля и управления автопарком
+							10,000+ автомобилей в СНГ, Европе и др. странах
 						</p>
 					</div>
 				</div>
@@ -79,7 +89,7 @@ const InfoPage: NextPage = () => {
 						<h1
 							style={{
 								color: "#fff",
-								fontSize: "15px",
+								fontSize: "16px",
 								fontWeight: 500,
 								marginBottom: "10",
 							}}
@@ -88,15 +98,14 @@ const InfoPage: NextPage = () => {
 						</h1>
 						<p
 							style={{
-								fontSize: "10px",
-								color: "#fff"
+								fontSize: "11px",
+								color: "#fff",
+								marginBottom: 0,
 							}}
 						>
-							Все решения по закупке автомобилей,
-							индивидуальных ставках аренды каждому
-							клиенту принимаются при помощи системы
-							скоринга и глубокой аналитики (BI)
-							сбора данных аренды / продажи авто в ОАЭ
+							Все решения по закупке автомобилей, индивидуальных ставках аренды
+							каждому клиенту принимаются при помощи системы скоринга и глубокой
+							аналитики (BI) сбора данных аренды / продажи авто в ОАЭ
 						</p>
 					</div>
 				</div>
@@ -108,7 +117,7 @@ const InfoPage: NextPage = () => {
 						<h1
 							style={{
 								color: "#fff",
-								fontSize: "15px",
+								fontSize: "16px",
 								fontWeight: 500,
 								marginBottom: "10",
 							}}
@@ -117,14 +126,14 @@ const InfoPage: NextPage = () => {
 						</h1>
 						<p
 							style={{
-								fontSize: "10px",
-								color: "#fff"
+								fontSize: "11px",
+								color: "#fff",
+								marginBottom: 0,
 							}}
 						>
-							Эффективный маркетинг, высокие уровни утилизации и
-							сильные операционные компетенции позволяют показывать
-							доходность всего автопарка на уровне 35% годовых с учетом
-							обесценения автомобиля
+							Эффективный маркетинг, высокие уровни утилизации и сильные
+							операционные компетенции позволяют показывать доходность всего
+							автопарка на уровне 35% годовых с учетом обесценения автомобиля
 						</p>
 					</div>
 				</div>
