@@ -23,7 +23,7 @@ const InfoPage: NextPage = () => {
 						<h1
 							style={{
 								color: "#fff",
-								fontSize: "13px",
+								fontSize: "15px",
 								fontWeight: 500,
 								marginBottom: "10",
 							}}
@@ -32,7 +32,7 @@ const InfoPage: NextPage = () => {
 						</h1>
 						<p
 							style={{
-								fontSize: "8px",
+								fontSize: "10px",
 								color: "#fff"
 							}}
 						>
@@ -50,7 +50,7 @@ const InfoPage: NextPage = () => {
 						<h1
 							style={{
 								color: "#fff",
-								fontSize: "13px",
+								fontSize: "15px",
 								fontWeight: 500,
 								marginBottom: "10",
 							}}
@@ -59,7 +59,7 @@ const InfoPage: NextPage = () => {
 						</h1>
 						<p
 							style={{
-								fontSize: "8px",
+								fontSize: "10px",
 								color: "#fff"
 							}}
 						>
@@ -79,7 +79,7 @@ const InfoPage: NextPage = () => {
 						<h1
 							style={{
 								color: "#fff",
-								fontSize: "13px",
+								fontSize: "15px",
 								fontWeight: 500,
 								marginBottom: "10",
 							}}
@@ -88,7 +88,7 @@ const InfoPage: NextPage = () => {
 						</h1>
 						<p
 							style={{
-								fontSize: "8px",
+								fontSize: "10px",
 								color: "#fff"
 							}}
 						>
@@ -108,7 +108,7 @@ const InfoPage: NextPage = () => {
 						<h1
 							style={{
 								color: "#fff",
-								fontSize: "13px",
+								fontSize: "15px",
 								fontWeight: 500,
 								marginBottom: "10",
 							}}
@@ -117,7 +117,7 @@ const InfoPage: NextPage = () => {
 						</h1>
 						<p
 							style={{
-								fontSize: "8px",
+								fontSize: "10px",
 								color: "#fff"
 							}}
 						>

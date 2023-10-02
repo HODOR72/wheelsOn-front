@@ -39,6 +39,13 @@ const menuItems: menuItem[] = [
 		iconWidth: 40,
 		iconHeight: 40,
 	},
+	{
+		icon: AboutIcon.src,
+		title: "Почему мы?",
+		href: "about",
+		iconWidth: 40,
+		iconHeight: 40,
+	},
 ]
 
 const Burger: NextPage = () => {

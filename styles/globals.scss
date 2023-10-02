@@ -1,10 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Bellefair&family=Fira+Sans:wght@400;500&family=Inter:wght@500;700&family=Nunito:wght@200;300;400;500;600;700;800;900;1000&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Bellefair&family=Fira+Sans:wght@400;500&family=Inter:wght@500;700&family=Nunito:wght@200;300;400;500;600;700;800;900;1000&display=swap");
 
 html,
 body {
 	padding: 0;
 	margin: 0;
-	background: #090A0C !important;
+	background: #090a0c !important;
 	font-family: "Euclid Circular Regular";
 	overflow-y: auto;
 	overflow-x: hidden;
@@ -47,7 +47,7 @@ a {
 
 .list-menu-item {
 	color: #fff !important;
-	background: #33363F;
+	background: #33363f;
 
 	p,
 	span {
@@ -56,15 +56,15 @@ a {
 }
 
 .select-component {
-	&>div {
-		&>div:focus {
+	& > div {
+		& > div:focus {
 			background-color: transparent;
 		}
 	}
 }
 
 .red {
-	color: #7DF17B;
+	color: #7df17b;
 }
 
 .list {
@@ -72,7 +72,7 @@ a {
 	padding: 10px;
 	border-radius: 10px;
 	color: #fff;
-	background: #33363F;
+	background: #33363f;
 }
 
 .test-list-item {
@@ -83,7 +83,7 @@ a {
 	border-radius: 4px;
 
 	&-active {
-		background-color: #7DF17B !important;
+		background-color: #7df17b !important;
 
 		span {
 			color: #fff;
@@ -102,7 +102,7 @@ a {
 
 		span {
 			&:first-child {
-				color: #7DF17B;
+				color: #7df17b;
 				font-weight: 600;
 				font-size: 20px;
 				margin-right: 0.6em;
@@ -123,14 +123,16 @@ a {
 
 .button-component-disabled {
 	opacity: 0.3 !important;
-	background: rgba($color: #7DF17B, $alpha: 0.3);
+	background: rgba($color: #7df17b, $alpha: 0.3);
 	box-shadow: initial !important;
 }
 
 .button-component-red {
-	background: radial-gradient(114.3% 168% at 53.58% 24%,
-			rgba(125, 241, 123, 0.705) 0%,
-			#7DF17B 100%);
+	background: radial-gradient(
+		114.3% 168% at 53.58% 24%,
+		rgba(125, 241, 123, 0.705) 0%,
+		#7df17b 100%
+	);
 	box-shadow: inset 0px 0px 8px rgba(0, 0, 0, 0.39);
 	color: #fff !important;
 }
@@ -141,7 +143,6 @@ a {
 }
 
 .button-component {
-
 	&-selected,
 	&-select {
 		color: #696969 !important;
@@ -180,7 +181,7 @@ a {
 	.red-line {
 		width: 50px;
 		display: block;
-		background-color: #7DF17B;
+		background-color: #7df17b;
 		height: 1px;
 		margin: auto;
 	}
@@ -200,14 +201,14 @@ a {
 	}
 
 	&-red {
-		color: #7DF17B;
+		color: #7df17b;
 
 		&-blur {
 			opacity: 0.5;
 		}
 
 		p {
-			color: #7DF17B;
+			color: #7df17b;
 		}
 	}
 }
@@ -260,8 +261,14 @@ a {
 	display: flex;
 	padding-right: 20px;
 	margin-right: 20px;
-	width: max-content !important;
-	height: max-content !important;
+	min-width: 50px !important;
+	min-height: 50px !important;
+	max-width: 50px !important;
+	max-height: 50px !important;
+	img {
+		width: 100% !important;
+		height: 100% !important;
+	}
 }
 
 .about-cell {
@@ -271,7 +278,7 @@ a {
 	display: flex;
 	flex-direction: row;
 	align-items: center;
-	background: #33363F;
+	background: #33363f;
 	padding: 20px;
 }
 
@@ -301,7 +308,7 @@ a {
 .become-list {
 	height: max-content;
 	font-size: 14px;
-	font-family: 'Inter';
+	font-family: "Inter";
 }
 
 .become-item {
@@ -319,7 +326,7 @@ a {
 	border-radius: 6px;
 	border: none;
 	outline: none;
-	background: #33363F;
+	background: #33363f;
 	width: 100%;
 	height: 56px;
 }
@@ -394,7 +401,7 @@ a {
 	width: 320px;
 	height: 385px;
 	border-radius: 15px;
-	background-color: #7DF17B;
+	background-color: #7df17b;
 	padding-top: 30px;
 	color: #fff;
 
@@ -509,7 +516,8 @@ a {
 	}
 }
 
-.css-hnex41-MuiInputBase-root-MuiOutlinedInput-root.Mui-focused .MuiOutlinedInput-notchedOutline {
+.css-hnex41-MuiInputBase-root-MuiOutlinedInput-root.Mui-focused
+	.MuiOutlinedInput-notchedOutline {
 	border-width: 0;
 	border-color: transparent;
 }

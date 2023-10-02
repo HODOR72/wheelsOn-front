@@ -1,5 +1,5 @@
 import type { NextPage } from "next"
-import React, { useEffect, useState } from "react"
+import React, { useState } from "react"
 import { TextComponent } from "../components/text-component"
 import { BaseLayout } from "../widgets/base-layout"
 import { MenuCell } from "../widgets/menu-cell"
@@ -8,7 +8,6 @@ import { useSelector } from "react-redux"
 import { useDispatch } from "react-redux"
 import { load } from "../features"
 import Image from "next/image"
-import { useRouter } from "next/router"
 import { ButtonComponent } from "../components/button-component"
 
 interface isLoaded {
@@ -24,7 +23,6 @@ interface isLoaded {
 }
 
 const Home: NextPage = () => {
-
 	const dispatch = useDispatch()
 	const [rocketLeft, setRocketLeft] = useState("75%")
 	const [rocketTop, setRocketTop] = useState("20%")
@@ -52,7 +50,6 @@ const Home: NextPage = () => {
 		videoLoadedHandler()
 	}
 
-
 	return (
 		<BaseLayout>
 			<div
@@ -66,7 +63,12 @@ const Home: NextPage = () => {
 				<TopHeader type="mainpage"></TopHeader>
 
 				<div>
-					<TextComponent color="#FFFFFF" fontWeight={700} fontSize={24} textAlign="center">
+					<TextComponent
+						color="#FFFFFF"
+						fontWeight={700}
+						fontSize={24}
+						textAlign="center"
+					>
 						Добро пожаловать!
 					</TextComponent>
 					<TextComponent
@@ -77,9 +79,8 @@ const Home: NextPage = () => {
 						fontWeight={400}
 						color="#FFFFFF"
 					>
-						Здесь вы можете узнать больше деталей
-						о нашем бизнесе и выбрать наиболее интересную
-						опцию для инвестиций.
+						Здесь вы можете узнать больше деталей о нашем бизнесе и выбрать
+						наиболее интересную опцию для инвестиций.
 					</TextComponent>
 				</div>
 
@@ -142,6 +143,21 @@ const Home: NextPage = () => {
 						labelFontSize={16}
 						justifyContent="start"
 						label="Почему мы?"
+					></MenuCell>
+					<MenuCell
+						width={"335px"}
+						height={"60px"}
+						href={"about"}
+						textMargin="10px"
+						imgSize={28}
+						labelWeight={500}
+						src={require("assets/img/supportIcon.svg")}
+						alt="partner"
+						background={"#33363F"}
+						flexDirection="row"
+						labelFontSize={16}
+						justifyContent="start"
+						label="ОАЭ в цифрах"
 					></MenuCell>
 				</div>
 				<div style={{ margin: "auto" }} className="mobile-cells-wrapper pt-5">
@@ -228,17 +244,17 @@ const Home: NextPage = () => {
 						color: "#fff",
 						padding: "13px 16px 18px 16px",
 						width: 200,
-						zIndex: 1,
+						zIndex: 10,
 						opacity: imgLoaded ? 1 : 0,
 						transition: "opacity 0.2s ease",
 					}}
 				>
-					<div className={firstLineClass}>Инвестируй в авто</div>
-					<div className={secondLineClass}>рентал бизнес с</div>
+					<div className={firstLineClass}>Инвестируй в бизнес</div>
+					<div className={secondLineClass}>по аренде авто</div>
 					<div className={thirdLineClass}>доходностью до 25%</div>
 				</div>
 			</div>
-		</BaseLayout >
+		</BaseLayout>
 	)
 }
 

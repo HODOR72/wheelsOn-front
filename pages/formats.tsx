@@ -6,43 +6,52 @@ import { TopHeader } from "../widgets/top-header"
 import { ButtonComponent } from "../components/button-component"
 
 const Formats: NextPage = () => {
-
 	return (
 		<BaseLayout>
 			<TopHeader type="advanced"></TopHeader>
 			<div className="mt-2"></div>
-			<TextComponent color="#fff" fontSize={22} fontWeight={700} textAlign="center">
-				Продать авто
+			<TextComponent
+				color="#fff"
+				fontSize={22}
+				fontWeight={700}
+				textAlign="center"
+			>
+				Купить авто и передать под наше управление в рассрочку
 			</TextComponent>
 			<div className="list">
 				<ul className="become-list">
 					<li className="become-item">
-						<b>Структура входа</b>: покупка собственного автомобиля и продажа нашей компании в рассрочку
+						<b style={{ color: "#7df17b" }}>Минимальная сумма инвестиций</b>:
+						USD 100k (для оформления автомобиля в собственность необходимо иметь
+						ВНЖ в ОАЭ)
 					</li>
 					<li className="become-item">
-						<b>Минимальная сумма инвестиций</b>: USD 200k (для оформления автомобиля в собственность необходимо иметь ВНЖ в ОАЭ)
+						<b style={{ color: "#7df17b" }}>Доходность</b>: от 12% в год
 					</li>
 					<li className="become-item">
-						<b>Доходность</b>: от 12% в год с погашением тела долга через 3-5 лет на выбор инвестора
+						<b style={{ color: "#7df17b" }}>Частота выплат %</b>: ежеквартально
 					</li>
 					<li className="become-item">
-						<b>Частота выплат %</b>: ежеквартально
+						<b style={{ color: "#7df17b" }}>Срок инвестиции</b>: от 3-х лет
 					</li>
 					<li className="become-item">
-						<b>Срок инвестиции</b>: от 3-х лет
+						<b style={{ color: "#7df17b" }}>Приобретаемые авто</b>: автомобили
+						бизнес и премиум класса
 					</li>
 					<li className="become-item">
-						<b>Марки приобретаемых авто</b>: премиум / SUV автомобили (Land Rover, Mercedes, BMW, Porsche, Audi и др.)
+						<b style={{ color: "#7df17b" }}>Возможные формы платежа</b>:
+						банковский перевод, криптовалюта, cash
 					</li>
 					<li className="become-item">
-						<b>Возможные формы платежа</b>: банковский перевод, криптовалюта, cash
-					</li>
-					<li className="become-item">
-						<b>Гарантии выплат</b>: security check на сумму долга от имени компании
+						<b style={{ color: "#7df17b" }}>Гарантии выплат</b>: чек от компании
+						на полную стоимость автомобиля
 					</li>
 				</ul>
 			</div>
-			<div style={{ margin: "auto" }} className="mobile-cells-wrapper pt-3 pb-5">
+			<div
+				style={{ margin: "auto" }}
+				className="mobile-cells-wrapper pt-3 pb-5"
+			>
 				<ButtonComponent href="sell">Связаться с нами</ButtonComponent>
 			</div>
 		</BaseLayout>

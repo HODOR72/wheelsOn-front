@@ -8,7 +8,7 @@ const nextConfig = {
 	env: {
 		externalLinkApi: `${process.env.EXTERNAL_API_LINK}`,
 		basicBackendPath: process.env.BASIC_BACDEND_PATH,
-		telegramToken: "5999586261:AAHEJ9ez4EvZB-6jilybWdNGHK87RkNr_00",
+		telegramToken: "6447211986:AAEP7Sxt0VsgfDHSWCv6Vz_vxJtHAOxiTns",
 	},
 }
 
