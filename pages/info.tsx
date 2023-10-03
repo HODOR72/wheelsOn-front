@@ -22,14 +22,14 @@ const InfoPage: NextPage = () => {
 				<ul className="become-list">
 					<li className="become-item">
 						<b style={{ color: "#7df17b" }}>Минимальная сумма инвестиций</b>:
-						USD 100k
+						$100k тыс.
 					</li>
 					<li className="become-item">
 						<b style={{ color: "#7df17b" }}> ВНЖ ОАЭ в подарок </b>:при
-						инвестиции от USD 100k
+						инвестиции от $100 тыс.
 					</li>
 					<li className="become-item">
-						<b style={{ color: "#7df17b" }}>Доходность</b>: от 12% до 25% в год
+						<b style={{ color: "#7df17b" }}>Доходность</b>: от 12% до 25% в год в валюте
 					</li>
 					<li className="become-item">
 						<b style={{ color: "#7df17b" }}>Частота выплат %</b>: 2 раза в год
@@ -42,7 +42,7 @@ const InfoPage: NextPage = () => {
 						целевые средства на закупку авто
 					</li>
 					<li className="become-item">
-						<b style={{ color: "#7df17b" }}>Приобретаемые авто:</b>: автомобили
+						<b style={{ color: "#7df17b" }}>Приобретаемые авто</b>: автомобили
 						бизнес и премиум класса
 					</li>
 					<li className="become-item">
@@ -50,6 +50,9 @@ const InfoPage: NextPage = () => {
 						банковский перевод, криптовалюта, cash
 					</li>
 				</ul>
+				<p style={{ marginTop: 10, color: "#7df17b" , textAlign: 'center'}}>
+					Делаем внж при инвестиции от $200 тыс.
+				</p>
 			</div>
 			<div
 				style={{ margin: "auto", width: "100%" }}

@@ -22,11 +22,11 @@ const Formats: NextPage = () => {
 				<ul className="become-list">
 					<li className="become-item">
 						<b style={{ color: "#7df17b" }}>Минимальная сумма инвестиций</b>:
-						USD 100k (для оформления автомобиля в собственность необходимо иметь
-						ВНЖ в ОАЭ)
+						$100 тыс. (для оформления автомобиля в собственность необходимо
+						иметь ВНЖ в ОАЭ)
 					</li>
 					<li className="become-item">
-						<b style={{ color: "#7df17b" }}>Доходность</b>: от 12% в год
+						<b style={{ color: "#7df17b" }}>Доходность</b>: 12% в год в валюте
 					</li>
 					<li className="become-item">
 						<b style={{ color: "#7df17b" }}>Частота выплат %</b>: ежеквартально
@@ -47,6 +47,9 @@ const Formats: NextPage = () => {
 						на полную стоимость автомобиля
 					</li>
 				</ul>
+				<p style={{ marginTop: 10, color: "#7df17b" , textAlign: 'center'}}>
+					Делаем внж при инвестиции от $200 тыс.
+				</p>
 			</div>
 			<div
 				style={{ margin: "auto" }}

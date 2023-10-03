@@ -109,8 +109,10 @@ const Home: NextPage = () => {
 						textFontSize={12}
 						labelFontSize={16}
 						label="Стать акционером"
-						underText="И получать от 12% до 25% годовых в валюте"
-					></MenuCell>
+					>
+						И получать от
+						<b style={{ color: "#7DF17B" }}>12% до 25% годовых</b>в валюте
+					</MenuCell>
 					<MenuCell
 						width={"164px"}
 						height={"202px"}
@@ -127,8 +129,10 @@ const Home: NextPage = () => {
 						textFontSize={12}
 						labelFontSize={16}
 						label="Купить авто"
-						underText="И продать нам в рассрочку с доходностью 12% годовых в валюте"
-					></MenuCell>
+					>
+						И передать под наше управление в рассрочку с доходностью{" "}
+						<b style={{ color: "#7DF17B" }}>12% годовых </b>в валюте
+					</MenuCell>
 					<MenuCell
 						width={"335px"}
 						height={"60px"}
