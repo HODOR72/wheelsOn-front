@@ -111,7 +111,7 @@ const Home: NextPage = () => {
 						label="Стать акционером"
 					>
 						И получать от
-						<b style={{ color: "#7DF17B" }}>12% до 25% годовых</b>в валюте
+						<b style={{ color: "#7DF17B" }}> 12% до 25% годовых </b>в валюте
 					</MenuCell>
 					<MenuCell
 						width={"164px"}
