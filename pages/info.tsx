@@ -25,11 +25,8 @@ const InfoPage: NextPage = () => {
 						$100k тыс.
 					</li>
 					<li className="become-item">
-						<b style={{ color: "#7df17b" }}> ВНЖ ОАЭ в подарок </b>:при
-						инвестиции от $100 тыс.
-					</li>
-					<li className="become-item">
-						<b style={{ color: "#7df17b" }}>Доходность</b>: от 12% до 25% в год в валюте
+						<b style={{ color: "#7df17b" }}>Доходность</b>: от 12% до 25% в год
+						в валюте
 					</li>
 					<li className="become-item">
 						<b style={{ color: "#7df17b" }}>Частота выплат %</b>: 2 раза в год
@@ -50,13 +47,22 @@ const InfoPage: NextPage = () => {
 						банковский перевод, криптовалюта, cash
 					</li>
 				</ul>
-				<p style={{ marginTop: 10, color: "#7df17b" , textAlign: 'center'}}>
-					Делаем внж при инвестиции от $200 тыс.
+				<p style={{ marginTop: 10, color: "#7df17b", textAlign: "center" }}>
+					Бесплатно оформим ВНЖ и откроем счет в ОАЭ при инвестиции от $200 тыс.
 				</p>
 			</div>
+			<div style={{ paddingBottom: "76px" }}></div>
 			<div
-				style={{ margin: "auto", width: "100%" }}
-				className="mobile-cells-wrapper pt-3 pb-5"
+				style={{
+					margin: "auto",
+					position: "fixed",
+					left: "50%",
+					transform: "translateX(-50%)",
+					bottom: 0,
+					background: "#090a0c",
+					width: '100%'
+				}}
+				className="mobile-cells-wrapper py-3 px-4"
 			>
 				<ButtonComponent href="sell">Связаться с нами</ButtonComponent>
 			</div>

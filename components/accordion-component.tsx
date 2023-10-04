@@ -16,7 +16,7 @@ export const AccordionComponent: FunctionComponent<AccordionComponent> = ({
 			<AccordionSummary
 				sx={{ height: "max-content" }}
 				expandIcon={
-					<KeyboardArrowUpIcon sx={{ color: "#7DF17B" }}></KeyboardArrowUpIcon>
+					<KeyboardArrowUpIcon sx={{ color: "#7DF17B" }} style={{transform: 'rotate(180deg)'}}></KeyboardArrowUpIcon>
 				}
 			>
 				<TextComponent color="#fff" textTransform="initial" fontSize={16} fontWeight={700}>{top}</TextComponent>

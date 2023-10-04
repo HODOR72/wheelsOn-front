@@ -47,13 +47,22 @@ const Formats: NextPage = () => {
 						на полную стоимость автомобиля
 					</li>
 				</ul>
-				<p style={{ marginTop: 10, color: "#7df17b" , textAlign: 'center'}}>
-					Делаем внж при инвестиции от $200 тыс.
+				<p style={{ marginTop: 10, color: "#7df17b", textAlign: "center" }}>
+					Бесплатно оформим ВНЖ и откроем счет в ОАЭ при инвестиции от $200 тыс.
 				</p>
 			</div>
+			<div style={{ paddingBottom: "76px" }}></div>
 			<div
-				style={{ margin: "auto" }}
-				className="mobile-cells-wrapper pt-3 pb-5"
+				style={{
+					margin: "auto",
+					position: "fixed",
+					left: "50%",
+					transform: "translateX(-50%)",
+					bottom: 0,
+					background: "#090a0c",
+					width: "100%",
+				}}
+				className="mobile-cells-wrapper py-3 px-4"
 			>
 				<ButtonComponent href="sell">Связаться с нами</ButtonComponent>
 			</div>

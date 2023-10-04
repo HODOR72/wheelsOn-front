@@ -58,6 +58,7 @@ const Home: NextPage = () => {
 					transition: "opacity 0.2s ease",
 					zIndex: 3,
 					overflow: "hidden",
+					paddingBottom: '76px'
 				}}
 			>
 				<TopHeader type="mainpage"></TopHeader>
@@ -164,7 +165,17 @@ const Home: NextPage = () => {
 						label="ОАЭ в цифрах"
 					></MenuCell>
 				</div>
-				<div style={{ margin: "auto" }} className="mobile-cells-wrapper pt-5">
+				<div
+					style={{
+						margin: "auto",
+						position: "fixed",
+						left: "50%",
+						transform: "translateX(-50%)",
+						bottom: 0,
+						background: "#090a0c",
+					}}
+					className="mobile-cells-wrapper py-3"
+				>
 					<ButtonComponent href="sell">Оставить заявку</ButtonComponent>
 				</div>
 			</div>
