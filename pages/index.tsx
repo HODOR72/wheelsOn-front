@@ -129,6 +129,7 @@ const Home: NextPage = () => {
 						alignItems="start"
 						flexDirection="column"
 						textFontSize={12}
+						top={15}
 						labelFontSize={16}
 						label="Купить авто"
 					>
@@ -150,10 +151,21 @@ const Home: NextPage = () => {
 						justifyContent="start"
 						label="Почему мы?"
 					></MenuCell>
+					<div
+						style={{
+							display: "flex",
+							flexDirection: "column",
+							alignItems: "center",
+							justifyContent: "center",
+							paddingTop: "15px",
+							height: "50px",
+						}}
+					>
+						<p style={{ textAlign: "center" }}>
+							Создано с wame.tools
+						</p>
+					</div>
 				</div>
-				<p style={{ margin: "0 0 50px 0", textAlign: "center" }}>
-					Создано с wame.tools
-				</p>
 				<div
 					style={{
 						margin: "auto",
@@ -173,13 +185,14 @@ const Home: NextPage = () => {
 					<ButtonComponent href="sell">
 						Оставить заявку
 					</ButtonComponent>
+					di
 				</div>
 			</div>
 			<div
 				className="pt-4"
 				style={{
 					position: "fixed",
-					top: 0,
+					top: 50,
 					left: 0,
 					width: "100%",
 					opacity: isLoaded ? 0 : 1,

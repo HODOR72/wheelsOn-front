@@ -7,7 +7,7 @@ import Radio from "@mui/material/Radio";
 import FormControl from "@mui/material/FormControl";
 import RadioGroup from "@mui/material/RadioGroup";
 import FormControlLabel from "@mui/material/FormControlLabel";
-import { useState, useCallback, memo } from "react";
+import { useState, useCallback } from "react";
 import CheckboxBorderIcon from "../components/checkbox-border-icon";
 import CheckboxIconChecked from "../components/checkbox-icon-checked";
 import { ButtonComponent } from "../components/button-component";
@@ -19,8 +19,7 @@ interface IStake {
 const Calculate: NextPage = () => {
 	const [years, setYears] = useState<number>(3); // Z
 	const [capital, setCapital] = useState<number>(100_000); // X
-	const [stake, setStake] = useState<number>(0);
-	const [radioValue, setRadioValue] = useState("");
+	const [stake, setStake] = useState("");
 
 	//years
 	const handleYears = useCallback(
@@ -69,13 +68,14 @@ const Calculate: NextPage = () => {
 	];
 
 	const handleRadio = (event: React.ChangeEvent<HTMLInputElement>) => {
-		setRadioValue((event.target as HTMLInputElement).value);
-		setStake(Number(radioValue));
+		setStake((event.target as HTMLInputElement).value);
 	};
 
-	let cleanIncome = capital * (1 + stake / 10) ** years - capital;
-	let everyYearIncome = stake;
-	let finalIncome = (stake / 10) * years;
+	let cleanIncome = Math.floor(
+		capital * (1 + Number(stake) / 100) ** years - capital
+	);
+	let everyYearIncome = Number(stake);
+	let finalIncome = Number(stake) * years;
 
 	return (
 		<BaseLayout style={{ height: "100vh", padding: "0 20px" }}>
@@ -125,7 +125,7 @@ const Calculate: NextPage = () => {
 						step={1}
 						min={3}
 						max={5}
-						valueLabelDisplay="auto"
+						valueLabelDisplay="off"
 						marks={yearMarks}
 						onChange={handleYears}
 					/>
@@ -158,7 +158,7 @@ const Calculate: NextPage = () => {
 					step={100_000}
 					min={100_000}
 					max={10_000_000}
-					valueLabelDisplay="auto"
+					valueLabelDisplay="off"
 					marks={capitalMarks}
 					onChange={handleCapital}
 				/>
@@ -166,13 +166,14 @@ const Calculate: NextPage = () => {
 			<div
 				style={{
 					marginTop: "37px",
+					paddingBottom: "30px",
 					display: "flex",
 					flexDirection: "column",
 					alignItems: "flex-start",
 				}}
 			>
 				<FormControl sx={{ paddingLeft: "5px", marginBottom: "15px" }}>
-					<RadioGroup value={radioValue} onChange={handleRadio}>
+					<RadioGroup value={stake} onChange={handleRadio}>
 						<FormControlLabel
 							sx={{
 								fontSize: "12px",
@@ -313,7 +314,6 @@ const Calculate: NextPage = () => {
 							fontSize={18}
 						>
 							{finalIncome}
-							{console.log(stake)}
 						</TextComponent>
 					</div>
 				</div>
