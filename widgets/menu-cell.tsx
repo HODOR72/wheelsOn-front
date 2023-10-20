@@ -1,37 +1,39 @@
-import React, { Children, FunctionComponent } from "react"
-import { Button } from "@mui/material"
-import Image from "next/image"
-import { TextComponent } from "../components/text-component"
-import { useRouter } from "next/router"
+import React, { Children, FunctionComponent } from "react";
+import { Button } from "@mui/material";
+import Image from "next/image";
+import { TextComponent } from "../components/text-component";
+import { useRouter } from "next/router";
 interface MenuCell {
-	src: any
-	alt: string
-	href: string
-	label: string
-	soon?: boolean
-	display?: string
-	marginBottom?: string
-	marginLeft?: string
-	marginRight?: string
-	alignItems?: string
-	labelWeight?: number
-	width?: number | string
-	height?: number | string
-	flexDirection?: string
-	imgSize?: number
-	background?: string
-	justifyContent?: string
-	textMargin?: string
-	underText?: string
-	textFontSize?: number
-	labelFontSize?: number
-	children?: any
+	src: any;
+	alt: string;
+	href: string;
+	label: string;
+	soon?: boolean;
+	top?: number;
+	display?: string;
+	marginBottom?: string;
+	marginLeft?: string;
+	marginRight?: string;
+	alignItems?: string;
+	labelWeight?: number;
+	width?: number | string;
+	height?: number | string;
+	flexDirection?: string;
+	imgSize?: number;
+	background?: string;
+	justifyContent?: string;
+	textMargin?: string;
+	underText?: string;
+	textFontSize?: number;
+	labelFontSize?: number;
+	children?: any;
 }
 
 export const MenuCell: FunctionComponent<any> = ({
 	href,
 	src,
 	alt,
+	top,
 	label,
 	background,
 	underText,
@@ -48,10 +50,10 @@ export const MenuCell: FunctionComponent<any> = ({
 	labelFontSize = 14,
 	children,
 }) => {
-	const router = useRouter()
+	const router = useRouter();
 	const goToLink = () => {
-		router.push(href)
-	}
+		router.push(href);
+	};
 
 	return (
 		<Button
@@ -74,7 +76,9 @@ export const MenuCell: FunctionComponent<any> = ({
 			onClick={goToLink}
 		>
 			{soon ? (
-				<div style={{ position: "absolute", top: 0, left: 0, zIndex: 1 }}>
+				<div
+					style={{ position: "absolute", top: 0, left: 0, zIndex: 1 }}
+				>
 					<Image
 						src={require("../assets/img/soon.svg")}
 						width={imgSize}
@@ -86,8 +90,16 @@ export const MenuCell: FunctionComponent<any> = ({
 				""
 			)}
 
-			<div className="cell-image">
-				<Image src={src} alt={alt} width={imgSize} height={imgSize}></Image>
+			<div
+				className="cell-image"
+				style={{ position: "relative", top: top }}
+			>
+				<Image
+					src={src}
+					alt={alt}
+					width={imgSize}
+					height={imgSize}
+				></Image>
 			</div>
 			<TextComponent
 				margin={textMargin}
@@ -110,5 +122,5 @@ export const MenuCell: FunctionComponent<any> = ({
 				</TextComponent>
 			) : null}
 		</Button>
-	)
-}
+	);
+};
