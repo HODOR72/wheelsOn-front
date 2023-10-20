@@ -184,7 +184,6 @@ const Home: NextPage = () => {
 					<ButtonComponent href="sell">
 						Оставить заявку
 					</ButtonComponent>
-					di
 				</div>
 			</div>
 			<div
