@@ -71,7 +71,7 @@ const Calculate: NextPage = () => {
 		setStake((event.target as HTMLInputElement).value);
 	};
 
-	let cleanIncome = Math.floor(capital * Number(stake) * years);
+	let cleanIncome = Math.floor(capital * (Number(stake) / 100) * years);
 	let everyYearIncome = Number(stake);
 	let finalIncome = Number(stake) * years;
 
