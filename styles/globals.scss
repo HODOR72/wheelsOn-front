@@ -538,15 +538,15 @@ a {
 }
 
 .calculate-button {
-	color: #fff;
-	height: 50px;
-	text-transform: none;
-	font-size: 16px;
+	color: #fff !important;
+	height: 50px !important;
+	text-transform: none !important;
+	font-size: 16px !important;
 	outline: 3px solid rgba(255, 255, 255, 0.37) !important;
-	outline-offset: -6px;
+	outline-offset: -6px !important;
 	border: 3px solid #7df17b !important;
-	background: #33363f;
-	margin-bottom: 10px;
+	background: #33363f !important;
+	margin-bottom: 10px !important;
 }
 
 .MuiSlider-markLabel {
