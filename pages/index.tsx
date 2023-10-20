@@ -150,23 +150,10 @@ const Home: NextPage = () => {
 						justifyContent="start"
 						label="Почему мы?"
 					></MenuCell>
-					<MenuCell
-						width={"335px"}
-						height={"60px"}
-						href={"about"}
-						textMargin="10px"
-						imgSize={28}
-						labelWeight={500}
-						src={require("assets/img/supportIcon.svg")}
-						alt="partner"
-						background={"#33363F"}
-						flexDirection="row"
-						labelFontSize={16}
-						justifyContent="start"
-						label="ОАЭ в цифрах"
-					></MenuCell>
 				</div>
-				<p>Создано с wame.tools</p>
+				<p style={{ margin: "0 0 50px 0", textAlign: "center" }}>
+					Создано с wame.tools
+				</p>
 				<div
 					style={{
 						margin: "auto",
@@ -174,7 +161,6 @@ const Home: NextPage = () => {
 						left: "50%",
 						transform: "translateX(-50%)",
 						bottom: 0,
-						background: "#090a0c",
 					}}
 					className="mobile-cells-wrapper py-3"
 				>
