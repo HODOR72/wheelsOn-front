@@ -156,9 +156,9 @@ const Home: NextPage = () => {
 							display: "flex",
 							flexDirection: "column",
 							alignItems: "center",
-							justifyContent: "center",
+							justifyContent: "flex-start",
 							paddingTop: "15px",
-							height: "50px",
+							height: "100px",
 						}}
 					>
 						<p style={{ textAlign: "center" }}>
