@@ -22,7 +22,7 @@ const InfoPage: NextPage = () => {
 				<ul className="become-list">
 					<li className="become-item">
 						<b style={{ color: "#7df17b" }}>Минимальная сумма инвестиций</b>:
-						$100k тыс.
+						$100 тыс.
 					</li>
 					<li className="become-item">
 						<b style={{ color: "#7df17b" }}>Доходность</b>: от 12% до 25% в год

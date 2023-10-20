@@ -165,6 +165,7 @@ const Home: NextPage = () => {
 						label="ОАЭ в цифрах"
 					></MenuCell>
 				</div>
+				<p style=>Создано с wame.tools</p>
 				<div
 					style={{
 						margin: "auto",
