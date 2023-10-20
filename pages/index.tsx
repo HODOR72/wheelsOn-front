@@ -157,7 +157,6 @@ const Home: NextPage = () => {
 							flexDirection: "column",
 							alignItems: "center",
 							justifyContent: "flex-start",
-							paddingTop: "15px",
 							height: "100px",
 						}}
 					>
