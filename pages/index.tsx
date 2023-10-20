@@ -1,54 +1,54 @@
-import type { NextPage } from "next"
-import React, { useState } from "react"
-import { TextComponent } from "../components/text-component"
-import { BaseLayout } from "../widgets/base-layout"
-import { MenuCell } from "../widgets/menu-cell"
-import { TopHeader } from "../widgets/top-header"
-import { useSelector } from "react-redux"
-import { useDispatch } from "react-redux"
-import { load } from "../features"
-import Image from "next/image"
-import { ButtonComponent } from "../components/button-component"
+import type { NextPage } from "next";
+import React, { useState } from "react";
+import { TextComponent } from "../components/text-component";
+import { BaseLayout } from "../widgets/base-layout";
+import { MenuCell } from "../widgets/menu-cell";
+import { TopHeader } from "../widgets/top-header";
+import { useSelector } from "react-redux";
+import { useDispatch } from "react-redux";
+import { load } from "../features";
+import Image from "next/image";
+import { ButtonComponent } from "../components/button-component";
 
 interface isLoaded {
-	isLoaded: boolean
+	isLoaded: boolean;
 }
 
 interface loading {
-	loadingReducer: isLoaded
+	loadingReducer: isLoaded;
 }
 
 interface isLoaded {
-	loading: loading
+	loading: loading;
 }
 
 const Home: NextPage = () => {
-	const dispatch = useDispatch()
-	const [rocketLeft, setRocketLeft] = useState("75%")
-	const [rocketTop, setRocketTop] = useState("20%")
-	const [imgLoaded, setImgLoaded] = useState(false)
-	const [firstLineClass, setFirstLineClass] = useState("")
-	const [secondLineClass, setSecondLineClass] = useState("")
-	const [thirdLineClass, setThirdLineClass] = useState("")
+	const dispatch = useDispatch();
+	const [rocketLeft, setRocketLeft] = useState("75%");
+	const [rocketTop, setRocketTop] = useState("20%");
+	const [imgLoaded, setImgLoaded] = useState(false);
+	const [firstLineClass, setFirstLineClass] = useState("");
+	const [secondLineClass, setSecondLineClass] = useState("");
+	const [thirdLineClass, setThirdLineClass] = useState("");
 	const isLoaded = useSelector(
 		(state: loading) => state?.loadingReducer?.isLoaded
-	)
+	);
 
 	const videoLoadedHandler = () => {
 		setTimeout(() => {
-			dispatch(load(true))
-		}, 4000)
-	}
+			dispatch(load(true));
+		}, 4000);
+	};
 
 	const startRocketAnimation = () => {
-		setRocketLeft("55%")
-		setRocketTop("30%")
-		setImgLoaded(true)
-		setFirstLineClass("typing-text")
-		setSecondLineClass("typing-text typing-text__delay-2s")
-		setThirdLineClass("typing-text typing-text__delay-2s")
-		videoLoadedHandler()
-	}
+		setRocketLeft("55%");
+		setRocketTop("30%");
+		setImgLoaded(true);
+		setFirstLineClass("typing-text");
+		setSecondLineClass("typing-text typing-text__delay-2s");
+		setThirdLineClass("typing-text typing-text__delay-2s");
+		videoLoadedHandler();
+	};
 
 	return (
 		<BaseLayout>
@@ -58,7 +58,7 @@ const Home: NextPage = () => {
 					transition: "opacity 0.2s ease",
 					zIndex: 3,
 					overflow: "hidden",
-					paddingBottom: '76px'
+					paddingBottom: "76px",
 				}}
 			>
 				<TopHeader type="mainpage"></TopHeader>
@@ -80,8 +80,8 @@ const Home: NextPage = () => {
 						fontWeight={400}
 						color="#FFFFFF"
 					>
-						Здесь вы можете узнать больше деталей о нашем бизнесе и выбрать
-						наиболее интересную опцию для инвестиций.
+						Здесь вы можете узнать больше деталей о нашем бизнесе и
+						выбрать наиболее интересную опцию для инвестиций.
 					</TextComponent>
 				</div>
 
@@ -112,7 +112,8 @@ const Home: NextPage = () => {
 						label="Стать акционером"
 					>
 						И получать от
-						<b style={{ color: "#7DF17B" }}> 12% до 25% годовых </b>в валюте
+						<b style={{ color: "#7DF17B" }}> 12% до 25% годовых </b>
+						в валюте
 					</MenuCell>
 					<MenuCell
 						width={"164px"}
@@ -165,7 +166,7 @@ const Home: NextPage = () => {
 						label="ОАЭ в цифрах"
 					></MenuCell>
 				</div>
-				<p style=>Создано с wame.tools</p>
+				<p>Создано с wame.tools</p>
 				<div
 					style={{
 						margin: "auto",
@@ -177,7 +178,15 @@ const Home: NextPage = () => {
 					}}
 					className="mobile-cells-wrapper py-3"
 				>
-					<ButtonComponent href="sell">Оставить заявку</ButtonComponent>
+					<ButtonComponent
+						className="calculate-button"
+						href="calculate"
+					>
+						Рассчитай потенциальную доходность
+					</ButtonComponent>
+					<ButtonComponent href="sell">
+						Оставить заявку
+					</ButtonComponent>
 				</div>
 			</div>
 			<div
@@ -271,7 +280,7 @@ const Home: NextPage = () => {
 				</div>
 			</div>
 		</BaseLayout>
-	)
-}
+	);
+};
 
-export default Home
+export default Home;

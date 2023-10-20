@@ -536,3 +536,40 @@ a {
 	left: 0px !important;
 	top: 30px !important;
 }
+
+.calculate-button {
+	color: #fff;
+	height: 50px;
+	text-transform: none;
+	font-size: 16px;
+	outline: 3px solid rgba(255, 255, 255, 0.37) !important;
+	outline-offset: -6px;
+	border: 3px solid #7df17b !important;
+	background: #33363f;
+	margin-bottom: 10px;
+}
+
+.MuiSlider-markLabel {
+	color: #bbbbbb !important;
+}
+
+.MuiFormControlLabel-label {
+	color: #fff;
+}
+
+.final-row {
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	border-bottom: 1px solid #202020;
+	margin-bottom: 15px;
+	padding-bottom: 15px;
+}
+
+.final-income {
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
