@@ -179,7 +179,7 @@ const Home: NextPage = () => {
 						className="calculate-button"
 						href="calculate"
 					>
-						Рассчитай потенциальную доходность
+						Рассчитайте потенциальную доходность
 					</ButtonComponent>
 					<ButtonComponent href="sell">
 						Оставить заявку
@@ -271,7 +271,7 @@ const Home: NextPage = () => {
 						transition: "opacity 0.2s ease",
 					}}
 				>
-					<div className={firstLineClass}>Инвестируй в бизнес</div>
+					<div className={firstLineClass}>Инвестируйте в бизнес</div>
 					<div className={secondLineClass}>по аренде авто</div>
 					<div className={thirdLineClass}>доходностью до 25%</div>
 				</div>
