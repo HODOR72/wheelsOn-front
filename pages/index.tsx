@@ -30,6 +30,7 @@ const Home: NextPage = () => {
 	const [firstLineClass, setFirstLineClass] = useState("");
 	const [secondLineClass, setSecondLineClass] = useState("");
 	const [thirdLineClass, setThirdLineClass] = useState("");
+	const [fourthLineClass, setFourthLineClass] = useState("");
 	const isLoaded = useSelector(
 		(state: loading) => state?.loadingReducer?.isLoaded
 	);
@@ -47,6 +48,7 @@ const Home: NextPage = () => {
 		setFirstLineClass("typing-text");
 		setSecondLineClass("typing-text typing-text__delay-2s");
 		setThirdLineClass("typing-text typing-text__delay-2s");
+		setFourthLineClass("typing-text typing-text__delay-3s");
 		videoLoadedHandler();
 	};
 
@@ -102,18 +104,18 @@ const Home: NextPage = () => {
 						imgSize={48}
 						src={require("assets/img/Become.svg")}
 						alt={"Car"}
-						textMargin="6px"
+						textMargin="3px 6px 3px 6px"
 						background={"#33363F"}
 						justifyContent="center"
 						alignItems="start"
 						flexDirection="column"
 						textFontSize={12}
 						labelFontSize={16}
-						label="Стать акционером"
+						label="Станьте акционером"
 					>
-						И получать от
-						<b style={{ color: "#7DF17B" }}> 12% до 25% годовых </b>
-						в валюте
+						С возможностью получать дивиденды
+						<b style={{ color: "#7DF17B" }}> (до 25% годовых) </b>
+						из прибыли
 					</MenuCell>
 					<MenuCell
 						width={"164px"}
@@ -124,16 +126,16 @@ const Home: NextPage = () => {
 						src={require("assets/img/BuyAuto.svg")}
 						alt={"Key"}
 						background={"#33363F"}
-						textMargin="6px"
+						textMargin="3px 6px 3px 6px"
 						justifyContent="center"
 						alignItems="start"
 						flexDirection="column"
 						textFontSize={12}
 						top={15}
 						labelFontSize={16}
-						label="Купить авто"
+						label="Купите автомобиль"
 					>
-						И передать под наше управление в рассрочку с доходностью{" "}
+						И продайте нам в рассрочку с доходностью{" "}
 						<b style={{ color: "#7DF17B" }}>12% годовых </b>в валюте
 					</MenuCell>
 					<MenuCell
@@ -264,16 +266,17 @@ const Home: NextPage = () => {
 						border: "0.5px solid rgba(0, 0, 0, 0.07)",
 						borderRadius: "0px 8px 8px 8px",
 						color: "#fff",
-						padding: "13px 16px 18px 16px",
-						width: 200,
+						padding: "13px 18px 18px 16px",
+						width: 220,
 						zIndex: 10,
 						opacity: imgLoaded ? 1 : 0,
 						transition: "opacity 0.2s ease",
 					}}
 				>
-					<div className={firstLineClass}>Инвестируйте в бизнес</div>
-					<div className={secondLineClass}>по аренде авто</div>
-					<div className={thirdLineClass}>доходностью до 25%</div>
+					<div className={firstLineClass}>Предлагаем инвестицию</div>
+					<div className={secondLineClass}>в доходный бизнес по</div>
+					<div className={thirdLineClass}>аренде автомобилей</div>
+					<div className={fourthLineClass}>в ОАЭ</div>
 				</div>
 			</div>
 		</BaseLayout>

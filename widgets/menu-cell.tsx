@@ -94,12 +94,7 @@ export const MenuCell: FunctionComponent<any> = ({
 				className="cell-image"
 				style={{ position: "relative", top: top }}
 			>
-				<Image
-					src={src}
-					alt={alt}
-					width={imgSize}
-					height={imgSize}
-				></Image>
+				<Image src={src} alt={alt} width={imgSize} height={imgSize} />
 			</div>
 			<TextComponent
 				margin={textMargin}

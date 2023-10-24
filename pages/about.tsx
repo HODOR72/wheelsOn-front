@@ -1,24 +1,24 @@
 // @ts-nocheck
-import type { NextPage } from "next"
-import { TextComponent } from "../components/text-component"
-import Image from "next/image"
-import { BaseLayout } from "../widgets/base-layout"
-import { TopHeader } from "../widgets/top-header"
-import { useState } from "react"
+import type { NextPage } from "next";
+import { TextComponent } from "../components/text-component";
+import Image from "next/image";
+import { BaseLayout } from "../widgets/base-layout";
+import { TopHeader } from "../widgets/top-header";
+import { useState } from "react";
 
 const About: NextPage = () => {
-	const [activePage, setActivePage] = useState<number>(0)
-	const maxPage = 2
+	const [activePage, setActivePage] = useState<number>(0);
+	const maxPage = 2;
 
 	const handleChangePage = (page: number) => {
 		if (page < 0) {
-			setActivePage(0)
+			setActivePage(0);
 		} else if (page > maxPage) {
-			setActivePage(2)
+			setActivePage(2);
 		} else {
-			setActivePage(page)
+			setActivePage(page);
 		}
-	}
+	};
 
 	return (
 		<BaseLayout>
@@ -91,8 +91,9 @@ const About: NextPage = () => {
 									color: "#fff",
 								}}
 							>
-								Средний срок нахождения экспата в ОАЭ (большая часть не видит
-								смысла в покупке личного автомобиля)
+								Средний срок нахождения экспата в ОАЭ (большая
+								часть не видит смысла в покупке личного
+								автомобиля)
 							</p>
 						</div>
 					</div>
@@ -124,8 +125,9 @@ const About: NextPage = () => {
 									color: "#fff",
 								}}
 							>
-								Переплачивают клиенты при выборе такси в пользу аренды авто (при
-								пробеге 2 тыс. км в мес. и сроке аренды 1+ мес.)
+								Переплачивают клиенты при выборе такси в пользу
+								аренды авто (при пробеге 2 тыс. км в мес. и
+								сроке аренды 1+ мес.)
 							</p>
 						</div>
 					</div>
@@ -168,8 +170,8 @@ const About: NextPage = () => {
 									color: "#fff",
 								}}
 							>
-								Туристов посетило Дубай в 2022 г. (самый посещаемый город в
-								мире)
+								Туристов посетило Дубай в 2022 г. (самый
+								посещаемый город в мире)
 							</p>
 						</div>
 					</div>
@@ -247,7 +249,7 @@ const About: NextPage = () => {
 					>
 						Динамика рынка
 					</TextComponent>
-					<div style={{marginTop: 46}}></div>
+					<div style={{ marginTop: 46 }}></div>
 					<div
 						style={{
 							display: "flex",
@@ -270,12 +272,19 @@ const About: NextPage = () => {
 					</div>
 					<p style={{ color: "white", paddingTop: 40, fontSize: 11 }}>
 						* рост рынка: на 50% за 4 года
-						<br /> ** рост премиум (целевого) сегмента: на 70% за 4 года
+						<br /> ** рост премиум (целевого) сегмента: на 70% за 4
+						года
 					</p>
 				</>
 			)}
 			<div style={{ margin: "auto" }}>
-				<div style={{ position: "relative", width: 150, margin: "0 auto" }}>
+				<div
+					style={{
+						position: "relative",
+						width: 150,
+						margin: "0 auto",
+					}}
+				>
 					<div
 						style={{
 							position: "absolute",
@@ -306,7 +315,7 @@ const About: NextPage = () => {
 				</div>
 			</div>
 		</BaseLayout>
-	)
-}
+	);
+};
 
-export default About
+export default About;

@@ -472,7 +472,6 @@ a {
 	overflow: hidden;
 	font-size: 15px;
 	font-weight: 500;
-	font-size: 14px;
 	font-family: "Euclid Circular Regular";
 
 	animation: animated-text 2s steps(29, end) 1s 1 normal both,
@@ -480,6 +479,14 @@ a {
 
 	&__delay-2s {
 		animation-delay: 2s;
+	}
+
+	&__delay-3s {
+		animation-delay: 3s;
+	}
+
+	&__delay-4s {
+		animation-delay: 4s;
 	}
 }
 
