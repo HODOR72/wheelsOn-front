@@ -1,9 +1,9 @@
 // @ts-nocheck
-import type { NextPage } from "next"
-import { TextComponent } from "../components/text-component"
-import { BaseLayout } from "../widgets/base-layout"
-import { TopHeader } from "../widgets/top-header"
-import { ButtonComponent } from "../components/button-component"
+import type { NextPage } from "next";
+import { TextComponent } from "../components/text-component";
+import { BaseLayout } from "../widgets/base-layout";
+import { TopHeader } from "../widgets/top-header";
+import { ButtonComponent } from "../components/button-component";
 
 const Formats: NextPage = () => {
 	return (
@@ -21,34 +21,49 @@ const Formats: NextPage = () => {
 			<div className="list">
 				<ul className="become-list">
 					<li className="become-item">
-						<b style={{ color: "#7df17b" }}>Минимальная сумма инвестиций</b>:
-						$100 тыс. (для оформления автомобиля в собственность необходимо
-						иметь ВНЖ в ОАЭ)
+						<b style={{ color: "#7df17b" }}>
+							Минимальная сумма инвестиций
+						</b>
+						: $100 тыс. (для оформления автомобиля в собственность
+						необходимо иметь ВНЖ в ОАЭ)
 					</li>
 					<li className="become-item">
-						<b style={{ color: "#7df17b" }}>Доходность</b>: 12% в год в валюте
+						<b style={{ color: "#7df17b" }}>Доходность</b>: 12% в
+						год в валюте за счет прибыли от сдачи автомобиля в
+						аренду
 					</li>
 					<li className="become-item">
-						<b style={{ color: "#7df17b" }}>Частота выплат %</b>: ежеквартально
+						<b style={{ color: "#7df17b" }}>Частота выплат %</b>:
+						ежеквартально
 					</li>
 					<li className="become-item">
-						<b style={{ color: "#7df17b" }}>Срок инвестиции</b>: от 3-х лет
+						<b style={{ color: "#7df17b" }}>Срок инвестиции</b>: от
+						3-х лет
 					</li>
 					<li className="become-item">
-						<b style={{ color: "#7df17b" }}>Приобретаемые авто</b>: автомобили
-						бизнес и премиум класса
+						<b style={{ color: "#7df17b" }}>Приобретаемые авто</b>:
+						автомобили бизнес и премиум класса
 					</li>
 					<li className="become-item">
-						<b style={{ color: "#7df17b" }}>Возможные формы платежа</b>:
-						банковский перевод, криптовалюта, cash
+						<b style={{ color: "#7df17b" }}>
+							Возможные формы платежа
+						</b>
+						: банковский перевод, криптовалюта, cash
 					</li>
 					<li className="become-item">
-						<b style={{ color: "#7df17b" }}>Гарантии выплат</b>: чек от компании
-						на полную стоимость автомобиля
+						<b style={{ color: "#7df17b" }}>Гарантии выплат</b>: чек
+						от компании на полную стоимость автомобиля
 					</li>
 				</ul>
-				<p style={{ marginTop: 10, color: "#7df17b", textAlign: "center" }}>
-					Бесплатно оформим ВНЖ и откроем счет в ОАЭ при инвестиции от $200 тыс.
+				<p
+					style={{
+						marginTop: 10,
+						color: "#7df17b",
+						textAlign: "center",
+					}}
+				>
+					Бесплатно оформим ВНЖ и откроем счет в ОАЭ при инвестиции от
+					$200 тыс.
 				</p>
 			</div>
 			<div style={{ paddingBottom: "76px" }}></div>
@@ -67,7 +82,7 @@ const Formats: NextPage = () => {
 				<ButtonComponent href="sell">Связаться с нами</ButtonComponent>
 			</div>
 		</BaseLayout>
-	)
-}
+	);
+};
 
-export default Formats
+export default Formats;
